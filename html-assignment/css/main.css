@@ -6,20 +6,21 @@
    **Id selector - add an id my-image to your image and select the id in CSS to add a box-shadow with 0 horizontal and vertical placement, 2px of the blur, 1px of the spread and black colour
    **Replace the bullets from the list of hobbies with squares
    **Using the nth-child selector - add a background to the odd list items in the hobby list
-   *Styling the Navigation
-        -Remove the bullets from the unordered list in navigation (only if you have used the ul tag inside the nav tag) 
+   **Styling the Navigation
+       -Remove the bullets from the unordered list in navigation (only if you have used the ul tag inside the nav tag) 
         -Remove the underline from the links
         -Add a background and border to the links
         -Change the background colour on hover or focus state of the links
         -Validate your HTML
  */
 
-
+/* changes the font family of the body and sets the font size to 18px */
  body {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: 18px;
  }
 
+ /* set the background coloer of the header and footer */
  header,footer {
    background-color: cornflowerblue;
  }
