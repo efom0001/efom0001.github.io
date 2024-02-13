@@ -50,9 +50,14 @@
  nav a {
    text-decoration: none;
    background-color:lightgrey;
-   border: 1px solid grey;
+   border: 3px solid grey;
+   
  }
 
  nav a:hover, nav a:focus {
    background-color: red;
+ }
+
+ nav>ul li{
+    margin-block: 5px;
  }
