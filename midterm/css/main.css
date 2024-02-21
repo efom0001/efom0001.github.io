@@ -1,3 +1,9 @@
+html{
+    /* margin: auto;
+    padding: auto; */
+    border: 50px solid grey;
+
+}
 header{
     background-image: url('../images/Lionel-Messi-header.jpg');
     height: 500px;
