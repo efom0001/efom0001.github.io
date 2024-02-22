@@ -1,14 +1,62 @@
-html{
-    /* margin: auto;
-    padding: auto; */
-    border: 50px solid grey;
-
+body{
+    background-color: lightgray;
+}
+.bodysize{
+    background-color: azure;
+    max-width: 1080px;
+   margin: auto;
+    
 }
 header{
     background-image: url('../images/Lionel-Messi-header.jpg');
     height: 500px;
     
+    
 }
-header>h1 {
+
+
+header h1 {
+    height: 200px;
+    width: 50%;
+    display: inline-block;
     color: aliceblue;
+    text-align: center;
+    position: relative;
+}
+
+nav a{
+    display: inline-block;
+    width:300px;
+    border-right: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:last-child{
+    border-right: none;
+}
+
+.image-wrapper {
+    width: auto;
+}
+
+img {
+    width: 300px;
+    float: left;
+    margin:10px;
+}
+
+.clearfix::after{
+    contain: "";
+    display: block;
+    clear: left;
+    background-color: blue;
+}
+
+div.form{
+    border: 1px solid black;
+}
+
+footer{
+    text-align: right;
 }
