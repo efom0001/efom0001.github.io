@@ -19,8 +19,8 @@ CSS should be valid, well-formatted and containing comments -->
 
     <div class="bodysize">
         <header>
-            <h1>The story of Lionel Messi</h1>
-            <!-- <img src="images/Lionel-Messi-header.jpg" alt="lionel messi"> -->
+            <img src="images/Lionel-Messi-header.jpg" alt="lionel messi">
+            <h1 class="centered">The story of Lionel Messi</h1>
         </header>
 
         <div class="navigation" id="nav">
@@ -36,7 +36,7 @@ CSS should be valid, well-formatted and containing comments -->
         </div>
         <h2>The story of the Greatest player to ever live</h2>
         <article>
-            <main class="image-wrapper clearfix">
+            <div class="image-wrapper clearfix">
                 <img src="images/Messi.jpg" alt="messi kissing world cup trophy">
 
             
@@ -59,7 +59,7 @@ CSS should be valid, well-formatted and containing comments -->
                     
                         In summary, Lionel Messi's story is one of talent, resilience, and triumph. From humble beginnings in Rosario to becoming a global icon, Messi's journey embodies the essence of footballing greatness.
                 </p>
-            </main>
+            </div>
             
 
             <aside>
@@ -99,21 +99,20 @@ CSS should be valid, well-formatted and containing comments -->
         <div class="form">
 
             <form>
-                <label for="name">Your name</label><br>
+                <label>Your name</label><br>
                 <input type="text" class="texts"><br><br>
-                <label for="email">Your email</label><br>
+                <label>Your email</label><br>
                 <input type="text"><br><br>
-                <label for="message">Your message</label><br>
+                <label>Your message</label><br>
                 <textarea name="message" id="message" ></textarea><br><br>
-                <label for="radio">Would you like to learn more about leo messi?</label><br>
+                <label>Would you like to learn more about leo messi?</label><br>
                 <div>
-                    <label for="yes">Yes</label>
-                    <input type="radio" name="answer" value="Yes">
-                    <label for="no">No</label>
-                    <input type="radio" name="answer" value="No">
-                    <label for="javascript">Maybe</label>
-                    <input type="radio" name="answer" value="maybe">
-                    
+                 <label>Yes</label>
+                 <input type="radio" name="answer">
+                 <label>No</label>
+                 <input type="radio" name="answer">
+                 <label>Maybe</label>
+                 <input type="radio" name="answer">                  
                 </div>
 
                 
@@ -121,9 +120,7 @@ CSS should be valid, well-formatted and containing comments -->
 
         </div>
 
-        <footer>
-            copyright GIOVANI&copy;
-        </footer>
+        <footer>copyright GIOVANI&copy;</footer>
     
     </div> 
 </body>
