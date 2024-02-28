@@ -15,22 +15,23 @@ header img{
 
 }
 
-.centered{
-    color: blue;
-    text-align: center;
-    position: relative;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+h1.centered {
+    position: absolute;
+    top: 40%; /* Vertically center the heading */
+    left: 50%; /* Horizontally center the heading */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    color: white; /* Customize the text color */
+    background-color: transparent; /* Add a semi-transparent background */
+    padding: 10px; /* Add some padding for readability */
 }
 
 nav a{
     display: inline-block;
-    width:300px;
+    width:350px;
     border-right: 1px solid black;
     text-align: center;
     text-decoration: none;
+    color: black;
 }
 
 nav a:last-child{
@@ -41,7 +42,7 @@ nav a:last-child{
     width: auto;
 }
 
-img {
+.image-wrapper img {
     width: 300px;
     float: left;
     margin:10px;
@@ -56,6 +57,11 @@ img {
 
 div.form{
     border: 1px solid black;
+    margin: 10px;
+}
+
+textarea{
+    width: 1000px;
 }
 
 footer{
