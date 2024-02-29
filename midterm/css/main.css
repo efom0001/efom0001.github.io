@@ -7,35 +7,67 @@ body{
     margin: auto;   
 }
 
+header {
+    height: 350px;
+}
+
 header img{
 
-    width:1080px;
+    width:100%;
+    /* height: 350px; */
     position: relative;
-    border: none;
+    border: none; 
 
 }
 
 h1.centered {
-    position: absolute;
+    position:relative;
     top: 40%; /* Vertically center the heading */
     left: 50%; /* Horizontally center the heading */
-    transform: translate(-50%, -50%); /* Adjust for centering */
+    transform: translate(-40%, -430%); /* Adjust for centering */
     color: white; /* Customize the text color */
     background-color: transparent; /* Add a semi-transparent background */
     padding: 10px; /* Add some padding for readability */
 }
 
+.navigation{
+        width: 100%;
+        background-color: #f0f0f0; /* Set your desired background color */
+        display: flex; /* Display navigation links horizontally */
+        justify-content: space-around; /* Distribute links evenly */
+        align-items: center; /* Vertically center the links */
+        padding: 10px; /* Add some padding for spacing */
+        padding-left: 0px;
+        padding-right: 0px;
+        font-weight: bold;
+
+}
+
+.navigation a:hover {
+    background-color: #ddd; /* Set hover background color */
+}
+
+nav{
+    width: 100%;
+    
+}
+
 nav a{
     display: inline-block;
-    width:350px;
+    width: 350px;
     border-right: 1px solid black;
     text-align: center;
     text-decoration: none;
     color: black;
 }
 
+nav a:nth-child(2),nav a:first-child{
+    width: 30.3%;
+}
+
 nav a:last-child{
     border-right: none;
+    width: 30.3%;
 }
 
 .image-wrapper {
@@ -61,7 +93,7 @@ div.form{
 }
 
 textarea{
-    width: 1000px;
+    width: auto;
 }
 
 footer{
