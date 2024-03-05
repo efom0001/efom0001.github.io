@@ -97,21 +97,21 @@
 
             <!-- creates form tag to create the form elements such as the the name, email,message and radio buttons -->
             <form>
-                <label>Your name</label><br>
-                <input type="text" class="texts"><br><br>
-                <label>Your email</label><br>
-                <input type="text" class="texts"><br><br>
-                <label>Your message</label><br>
+                <label for="name">Your name</label><br>
+                <input id="name" type="text" class="texts"><br><br>
+                <label for="email">Your email</label><br>
+                <input id="email" type="email" class="texts"><br><br>
+                <label for="message">Your message</label><br>
                 <textarea name="message" id="message" ></textarea><br><br>
                 <label>Would you like to learn more about leo messi?</label><br>
                 <div>
-                 <label>Yes</label>
-                 <input type="radio" name="answer">
-                 <label>No</label>
-                 <input type="radio" name="answer">
-                 <label>Maybe</label>
-                 <input type="radio" name="answer"> <br><br>
-                 <input type="submit" value="SEND" class="bottun"> 
+                 <label for="yes">Yes</label>
+                 <input id="yes" type="radio" name="answer">
+                 <label for="no">No</label>
+                 <input id="no" type="radio" name="answer">
+                 <label for="notsure">Maybe</label>
+                 <input id="notsure" type="radio" name="answer"> <br><br>
+                 <button type="submit" class="bottun">submit</button>
                 </div>
                 <br>
 
