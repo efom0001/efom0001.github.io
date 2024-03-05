@@ -1,12 +1,3 @@
-<!-- Create a new folder named "midterm" in your GitHub repository
-Add CSS file and images in proper folders
-Header - Use the image tag to add the image and position the site title on top of it
-Article - Image should have the text wrapping around it
-Facts - Use proper syntax for listing the facts
-Form - All the inputs must be linked to the relative labels.
-The overall design should be as close to provided mockup as possible.
-HTML should be valid, well-formatted and containing comments
-CSS should be valid, well-formatted and containing comments -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,12 +8,14 @@ CSS should be valid, well-formatted and containing comments -->
 </head>
 <body>
 
+    <!--this container contains everything that is in the body-->
     <div class="bodysize">
         <header>
             <img src="images/Lionel-Messi-header.jpg" alt="Lionel Messi">
             <h1 class="centered">The story of Lionel Messi</h1>
         </header>        
 
+        <!--This is the div that that generates the navigation bar-->
         <div class="navigation" id="nav">
             <nav>
                 
@@ -35,7 +28,11 @@ CSS should be valid, well-formatted and containing comments -->
             </nav>
         </div>
         <h2 class="articleheading">The story of the Greatest player to ever live</h2>
+
+        <!--article tag containing the the whole article-->
         <article>
+
+            <!-- this div container contains the main part of the the article which is the story of Lionel messi -->
             <div class="image-wrapper clearfix">
                 <img src="images/Messi.jpg" alt="messi kissing world cup trophy">
 
@@ -61,7 +58,7 @@ CSS should be valid, well-formatted and containing comments -->
                 </p>
             </div>
             
-
+            <!-- this section with id fact contains an unordered list of most of messi's accomplishments Throughout his career -->
             <aside id="facts">
                 <h2>Facts about Lionel Messi</h2>
                 <p>This is additional information related to the main content.</p>
@@ -98,6 +95,7 @@ CSS should be valid, well-formatted and containing comments -->
 
         <div class="form">
 
+            <!-- creates form tag to create the form elements such as the the name, email,message and radio buttons -->
             <form>
                 <label>Your name</label><br>
                 <input type="text" class="texts"><br><br>
