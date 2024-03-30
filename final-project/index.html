@@ -1,124 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>efom0001</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>efom0001</title>
 
-    <script src="https://kit.fontawesome.com/c52e855d74.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/c52e855d74.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
 
-    <!-- Nav with a ul and a form
-    nav will display in flex at break point and ul will display also display flex at break point -->
-    <nav>
-        <div class="logo"><img src="images/logo.png" alt="logo"></div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="search">
-            <form>
-                <input type="text" placeholder="Search">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-        </div>
-    </nav>
-
-    <!-- home page div which will have a background image and contains a main tag that will have a transparent background -->
-    <div class="home">
+        <!-- Nav with a ul and a form
+        nav will display in flex at break point and ul will display also display flex at break point -->
+        <nav>
+            <div class="logo"><img src="images/logo.png" alt="logo"></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </nav>
         <main>
-            <header>
-                <h1>Welcom To Three Star Media</h1>
-            </header>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione ipsa deleniti quos esse ipsum fugiat ullam dicta necessitatibus! Libero quos modi quo repellendus facilis enim hic voluptatum atque aperiam commodi?</p>
+            <!-- home page div which will have a background image and contains a main tag that will have a transparent background -->
+            <div class="home">
+                <div>
+                    <header>
+                        <h1>Welcom To Three Star Media</h1>
+                    </header>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione ipsa deleniti quos esse ipsum fugiat ullam dicta necessitatibus! Libero quos modi quo repellendus facilis enim hic voluptatum atque aperiam commodi?</p>
 
-            <a href="#" class="button green-button">Connect with us</a>
+                    <a href="#" class="button green-button">Connect with us</a>
+                </div>
+                
+            </div>
+
+            <!-- div with class="about" that contains an image and a div and will display in flex at the breakpoint -->
+            <div class="about details">
+                <img src="images/about-us.jpg" alt="tablePic">
+
+                <div>
+                    <h1>About Us</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi error expedita illo nisi voluptatum blanditiis laboriosam ullam architecto consequatur, quisquam nihil quas! Tenetur accusamus officiis harum accusantium voluptatem debitis vitae.</p>
+
+                    <p>Minima explicabo vero odio vitae unde enim exercitationem minus? Unde, aliquid cumque id adipisci ex temporibus, dicta fugiat vero eaque, sint consequuntur. Molestiae, cumque eaque! Odio minima culpa voluptatum atque.</p>
+                </div>
+            
+            </div>
+
+            <!-- div with class "services" conttains 5 divs which will be displayed as grid when the breakpoint is reached -->
+            <div class="services">
+
+                <h1>Our Services</h1>
+
+                <div class="digital">
+                    <img src="images/digital.jpg" alt="picService1">
+                    <div class="details">
+                        <h2>Digital Transformation</h2>
+
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi at voluptas omnis, magnam qui hic distinctio rem perferendis mollitia id fuga, fugit officia incidunt veritatis sint temporibus animi facere dolor.</p>
+
+                        <a href="#" class="button black-button">Digital Plans</a>
+                    </div>
+                    
+                </div>
+
+                <div class="marketing">
+                    <img src="images/marketing.jpg" alt="computer picture">
+                    <div class="details">
+                        <h2>marketing</h2>
+                    
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi at voluptas omnis, magnam qui hic distinctio rem perferendis mollitia id fuga, fugit officia incidunt veritatis sint temporibus animi facere dolor.</p>
+            
+                        <a href="#" class="button black-button">marketing Plans</a>
+                    </div>
+                
+                </div>
+
+                <div class="video">
+                    <img src="images/video.jpg" alt="phone picture">
+                    <div class="details">
+                        <h2>Video Production</h2>
+                    
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi at voluptas omnis, magnam qui hic distinctio rem perferendis mollitia id fuga, fugit officia incidunt veritatis sint temporibus animi facere dolor.</p>
+
+                        <a href="#" class="button black-button">Video Plans</a>
+                    </div>
+                    
+                </div>
+
+                <div class="web">
+                    <img src="images/web.jpg" alt="phone on a book">
+                    <div class="details">
+                        <h2>Web Development</h2>
+                    
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi at voluptas omnis, magnam qui hic distinctio rem perferendis mollitia id fuga, fugit officia incidunt veritatis sint temporibus animi facere dolor.</p>
+
+                        <a href="#" class="button black-button">Web Plans</a>
+                    </div>
+                    
+                </div>
+
+                <div class="print">
+                    <img src="images/print.jpg" alt="News papers boxes">
+                    <div class="details">
+                        <h2>Print</h2>
+                    
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi at voluptas omnis, magnam qui hic distinctio rem perferendis mollitia id fuga, fugit officia incidunt veritatis sint temporibus animi facere dolor.</p>
+            
+                        <a href="#" class="button black-button">Print Plans</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- vision div with a header annd a button it will occupy a 100% width for both mobile and desktop -->
+            <div class="vision">
+                <h2>Our Vision</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, recusandae repellendus voluptas, eveniet molestiae esse sint sapiente tenetur impedit nisi laborum quas dolores praesentium alias? Asperiores officia aliquam ex ipsum!</p>
+
+                <a href="#" class="button black-button">Learn More</a>
+            </div>
+
+            <div>
+                <h1>Our Team</h1>
+                <div class="team">
+
+                    <div class="john">
+                        <img src="images/john.jpg" alt="picture of John">
+                        <div class="details">
+                            <h2>John Doe</h2>
+                            <h3>CEO and Co-owner</h3>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, itaque voluptates quam consequatur commodi nulla ipsa labore velit excepturi, nam iure iste esse? Soluta perspiciatis minus accusantium animi illo nemo?</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="bob">
+                        <img src="images/bob.jpg" alt="picture of Bob">
+                        <div class="details">
+                            <h2>Bob Rite</h2>
+                            <h3>CFO and Co-owner</h3>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, itaque voluptates quam consequatur commodi nulla ipsa labore velit excepturi, nam iure iste esse? Soluta perspiciatis minus accusantium animi illo nemo?</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </main>
         
-    </div>
 
-    <!-- div with class="about" that contains an image and a div and will display in flex at the breakpoint -->
-    <div class="about">
-        <img src="images/about-us.jpg" alt="tablePic">
+        <aside>
+            <h1>Contact us</h1>
+            <div class="form">
 
-        <div>
-            <h1>About Us</h1>
+                <form>
+                    <h2>send us a message</h2>
+                    <label>Full Name</label><br>
+                    <input type="text" name="name">
+                    <br>
+                    <label>Email</label><br>
+                    <input type="email" name="email">
+                    <br>
+                    <label>Message</label><br>
+                    <textarea name="message"></textarea>
+                    <br>
+                    <input class="send" type="submit" name="submit" value="send">
+                </form>
 
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi error expedita illo nisi voluptatum blanditiis laboriosam ullam architecto consequatur, quisquam nihil quas! Tenetur accusamus officiis harum accusantium voluptatem debitis vitae.</p>
+            </div>
+            <div class="table">
+                <h2>Hours of operation</h2>
+                <table>
 
-            <p>Minima explicabo vero odio vitae unde enim exercitationem minus? Unde, aliquid cumque id adipisci ex temporibus, dicta fugiat vero eaque, sint consequuntur. Molestiae, cumque eaque! Odio minima culpa voluptatum atque.</p>
-        </div>
-       
-    </div>
+                    <tr>
+                        <th>Days</th>
+                        <th>Hours</th>
+                    </tr>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>9AM - 6PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday - Sunday</td>
+                        <td>Closed</td>
+                    </tr>
 
-    <!-- div with class "services" conttains 5 divs which will be displayed as grid when the breakpoint is reached -->
-    <div class="services">
+                </table>
+            </div>
+            <div>
+                <h2>Location</h2>
 
-        <h1>Our Services</h1>
-
-        <div class="digital">
-            <img src="images/digital.jpg" alt="picService1">
-            <h2>Digital Transformation</h2>
-
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi at voluptas omnis, magnam qui hic distinctio rem perferendis mollitia id fuga, fugit officia incidunt veritatis sint temporibus animi facere dolor.</p>
-
-            <a href="#" class="button black-button">Digital Plans</a>
-
-
-        </div>
-
-        <div class="marketing">
-            <img src="images/marketing.jpg" alt="computer picture">
-            <h2>marketing</h2>
-            
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi at voluptas omnis, magnam qui hic distinctio rem perferendis mollitia id fuga, fugit officia incidunt veritatis sint temporibus animi facere dolor.</p>
-
-            <a href="#" class="button black-button">marketing Plans</a>
-        </div>
-
-        <div class="video">
-            <img src="images/video.jpg" alt="phone picture">
-            <h2>Video Production</h2>
-            
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi at voluptas omnis, magnam qui hic distinctio rem perferendis mollitia id fuga, fugit officia incidunt veritatis sint temporibus animi facere dolor.</p>
-
-            <a href="#" class="button black-button">Video Plans</a>
-        </div>
-
-        <div class="web">
-            <img src="images/web.jpg" alt="phone on a book">
-            <h2>Web Development</h2>
-            
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi at voluptas omnis, magnam qui hic distinctio rem perferendis mollitia id fuga, fugit officia incidunt veritatis sint temporibus animi facere dolor.</p>
-
-            <a href="#" class="button black-button">Web Plans</a>
-        </div>
-
-        <div class="print">
-            <img src="images/print.jpg" alt="News papers boxes">
-            <h2>Print</h2>
-            
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi at voluptas omnis, magnam qui hic distinctio rem perferendis mollitia id fuga, fugit officia incidunt veritatis sint temporibus animi facere dolor.</p>
-
-            <a href="#" class="button black-button">Print Plans</a>
-        </div>
-
-        <!-- vision div with a header annd a button it will occupy a 100% width for both mobile and desktop -->
-        <div class="vision">
-            <h2>Our Vision</h2>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, recusandae repellendus voluptas, eveniet molestiae esse sint sapiente tenetur impedit nisi laborum quas dolores praesentium alias? Asperiores officia aliquam ex ipsum!</p>
-
-            <a href="#" class="button black-button">Learn More</a>
-        </div>
-
-    </div>
-    
-</body>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44863.11128251141!2d-75.83114335136719!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sColl%C3%A8ge%20algonquin!5e0!3m2!1sfr!2sca!4v1711556599214!5m2!1sfr!2sca"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </div>
+        </aside>
+        
+    </body>
 </html>
