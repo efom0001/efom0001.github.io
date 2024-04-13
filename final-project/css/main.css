@@ -1,3 +1,90 @@
+
+.logo{
+    background-color: #C78B07;
+}
+nav {
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+nav a{
+    display: block;
+    padding: 20px;
+}
+
+
+/* nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+nav li{
+    padding: 10px 20px;
+    display: block;
+} */
+
+nav a:hover{
+    color:black   
+}
+
+nav a:active,nav a:visited{
+    background-color: #C78B07;
+}
+
+nav a{
+    text-align: center;
+    text-decoration: none;
+    color: #C78B07;
+}
+
+
+nav form{
+    padding: 0;
+    margin: 0;
+}
+
+nav .search {
+    padding-right: 10px; /* Space from the right edge */
+    padding-left: 10px;
+}
+
+/* Style the search input */
+nav input[type="text"] {
+    padding: 5px;
+    width: 88%;
+    margin-right: 0;
+}
+
+/* Style the search button */
+nav button {
+    background: none;
+    border: 1px solid #C78B07;
+    padding: 5px;
+    color: #C78B07;
+    cursor: pointer;
+    width: 31px;
+}
+
+.home{
+    background-image: url("../images/main-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+.home>div{
+    background-color: rgba(0, 0, 0, 0.5);
+}
 /* hr{
     border-top: 3px solid orange;
 
@@ -17,6 +104,8 @@
     display: flex;
     flex-direction: row-reverse;
 } 
+
+
 .bob img, .bob .details,.john img, .john .details{
     flex-basis: 50% ;
     
