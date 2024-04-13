@@ -1,4 +1,10 @@
+h1,h2,h3,p,main a{
+    margin-left: 10px;
+}
 
+h2,h3,p,main a{
+    padding-bottom: 10px;
+}
 .logo{
     background-color: #C78B07;
 }
@@ -8,6 +14,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
+    margin-bottom: 0;
 }
 
 
@@ -16,19 +23,6 @@ nav a{
     padding: 20px;
 }
 
-
-/* nav ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-nav li{
-    padding: 10px 20px;
-    display: block;
-} */
 
 nav a:hover{
     color:black   
@@ -72,6 +66,10 @@ nav button {
     width: 31px;
 }
 
+main{
+    margin-top: 0;
+}
+
 .home{
     background-image: url("../images/main-banner.jpg");
     background-repeat: no-repeat;
@@ -84,12 +82,123 @@ nav button {
 
 .home>div{
     background-color: rgba(0, 0, 0, 0.5);
+    height: 70%;
+    align-self: center;
 }
-/* hr{
+
+main .button{
+    box-sizing: border-box;
+    width: 300px;
+    background-color: #C78B07;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.home h1, .home p {
+    color: white;
+}
+
+.about{
+    background-color: #FFE6AC;
+}
+.about img{
+    width: calc(100% - 20px) ;
+    padding: 10px;
+}
+.services{
+    width: 100%;
+}
+
+.digital,.marketing,.video,.web,.print{
+    background-color: #FFE6AC;
+    width: calc(100% - 20px) ;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.digital img,.marketing img,.video img,.web img,.print img{
+    width: 100%;
+}
+
+.vision{
+    color: white;
+    background-image: url("../images/vision.jpg");
+    width: 100%;
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+
+}
+
+main .black-button{
+    background-color: #222222;
+    color: white;
+}
+
+.vision .button{
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 0.5px solid #C78B07;
+    color: white;
+}
+
+.team .john, .team .bob{
+    background-color: #FFE6AC;
+    width: calc(100% - 20px) ;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.john img, .bob img{
+    width: 100%;  
+}
+
+ hr{
     border-top: 3px solid orange;
-
 }
 
+.form form input{
+    width: calc(100% - 10px);
+    margin: auto;
+}
+
+textarea{
+    width: calc(100% - 10px);
+    height: 95px;
+    margin: auto;
+}
+
+.form .send{
+    background-color: #222222;
+    color: #C78B07;
+    width: 45px;
+    margin-top: 10px;
+}
+
+table{
+    width: calc(100% - 10px);
+    margin: auto;
+}
+
+table ,th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #FFE6AC;
+}
+
+iframe{
+    width: calc(100% - 10px);
+    height: 400px;
+    margin: auto;
+}
+/*
 .details{
     background-color: yellowgreen;
 }
@@ -116,18 +225,8 @@ nav button {
     
 }
 
-iframe{
-    width: 98%;
-    height: 400px;
-}
-table ,th, td{
-    border: 1px solid black;
-    border-collapse: collapse;
-}
 
-th{
-    background-color: yellow;
-}
+
 
 input[type="submit"] {
     background: black;
