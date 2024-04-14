@@ -1,5 +1,35 @@
-h1,h2,h3,p,main a{
+body{
+    max-width: 1200px;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 12px;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1,h2,h3,h4,p,main a{
     margin-left: 10px;
+    margin-bottom: 20px
+    
 }
 
 h2,h3,p,main a{
@@ -40,6 +70,8 @@ nav a{
 
 
 nav form{
+    display: flex;
+    flex-direction: row;
     padding: 0;
     margin: 0;
 }
@@ -76,7 +108,7 @@ main{
     background-position: center;
     background-size: contain;
     background-size: cover;
-    height: 70vh;
+    height: 50vh;
     width: 100%;
 }
 
@@ -84,7 +116,9 @@ main{
     background-color: rgba(0, 0, 0, 0.5);
     height: 70%;
     align-self: center;
+    padding-top: 30px;
 }
+
 
 main .button{
     box-sizing: border-box;
@@ -120,6 +154,7 @@ main .button{
 
 .digital img,.marketing img,.video img,.web img,.print img{
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .vision{
@@ -177,6 +212,7 @@ textarea{
     color: #C78B07;
     width: 45px;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 table{
@@ -198,6 +234,69 @@ iframe{
     height: 400px;
     margin: auto;
 }
+
+.digital{grid-area: dt;}
+.marketing{grid-area: mk;}
+.video{grid-area: vd;}
+.web{grid-area: wd;}
+.print{grid-area: pt;}
+.services h2{grid-area: h2;}
+
+
+@media screen and (min-width: 760px){
+
+    .big-nav{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        background-color: #222222;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav form{
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .about img{
+       width: 400px; 
+       height: 240px;
+    }
+
+    .about .details{
+        width: 500px;
+    }
+
+    .services{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas: "h2 h2 h2 . . ."
+                             "dt dt dt mk mk mk"
+                             "vd vd wd wd pt pt";
+        grid-gap: 5px 5px;
+        justify-content: space-between;
+    }
+
+}
+
+
 /*
 .details{
     background-color: yellowgreen;

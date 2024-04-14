@@ -5,32 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>efom0001</title>
 
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap" rel="stylesheet">
+
         <script src="https://kit.fontawesome.com/c52e855d74.js" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
 
         <!-- Nav with a ul and a form
         nav will display in flex at break point and ul will display also display flex at break point -->
-        <div class="logo"><img src="images/logo.png" alt="logo"></div>
-        <nav>
-                
-                <a href="index.html">Home</a>
-                <a href="#">About us</a>
-                <a href="#">Services</a>
-                <a href="#">Team</a>
-                <a href="#">Contact</a>
-                
-            <form>
-                <input type="text" placeholder="Search">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button> 
-            </form>
-        </nav>
+        <div class="big-nav">
+            <div class="logo"><img src="images/logo.png" alt="logo"></div>
+            <nav>
+                    
+                    <a href="index.html">Home</a>
+                    <a href="#about">About us</a>
+                    <a href="#services">Services</a>
+                    <a href="#team">Team</a>
+                    <a href="#contact">Contact</a>
+                    
+                <form>
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button> 
+                </form>
+            </nav>
+        </div>
+
         <main>
             <!-- home page div which will have a background image and contains a main tag that will have a transparent background -->
             <div class="home">
-                <div>
+                <div class="transparent">
                     <header>
                         <h1>Welcome To Three Star Media</h1>
                     </header>
@@ -42,11 +51,11 @@
             </div>
 
             <!-- div with class="about" that contains an image and a div and will display in flex at the breakpoint -->
-            <div class="about details">
+            <div class="about">
                 <img src="images/about-us.jpg" alt="tablePic">
 
-                <div>
-                    <h1>About Us</h1>
+                <div class=" details">
+                    <h2 id="about">About Us</h2>
 
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi error expedita illo nisi voluptatum blanditiis laboriosam ullam architecto consequatur, quisquam nihil quas! Tenetur accusamus officiis harum accusantium voluptatem debitis vitae.</p>
 
@@ -58,12 +67,12 @@
             <!-- div with class "services" conttains 5 divs which will be displayed as grid when the breakpoint is reached -->
             <div class="services">
 
-                <h1>Our Services</h1>
+                <h2 id="services">Our Services</h2>
 
                 <div class="digital">
                     <img src="images/digital.jpg" alt="picService1">
                     <div class="details">
-                        <h2>Digital Transformation</h2>
+                        <h3>Digital Transformation</h3>
 
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi at voluptas omnis, magnam qui hic distinctio rem perferendis mollitia id fuga, fugit officia incidunt veritatis sint temporibus animi facere dolor.</p>
 
@@ -75,7 +84,7 @@
                 <div class="marketing">
                     <img src="images/marketing.jpg" alt="computer picture">
                     <div class="details">
-                        <h2>marketing</h2>
+                        <h3>Marketing</h3>
                     
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi at voluptas omnis, magnam qui hic distinctio rem perferendis mollitia id fuga, fugit officia incidunt veritatis sint temporibus animi facere dolor.</p>
             
@@ -87,7 +96,7 @@
                 <div class="video">
                     <img src="images/video.jpg" alt="phone picture">
                     <div class="details">
-                        <h2>Video Production</h2>
+                        <h3>Video Production</h3>
                     
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi at voluptas omnis, magnam qui hic distinctio rem perferendis mollitia id fuga, fugit officia incidunt veritatis sint temporibus animi facere dolor.</p>
 
@@ -99,7 +108,7 @@
                 <div class="web">
                     <img src="images/web.jpg" alt="phone on a book">
                     <div class="details">
-                        <h2>Web Development</h2>
+                        <h3>Web Development</h3>
                     
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi at voluptas omnis, magnam qui hic distinctio rem perferendis mollitia id fuga, fugit officia incidunt veritatis sint temporibus animi facere dolor.</p>
 
@@ -111,7 +120,7 @@
                 <div class="print">
                     <img src="images/print.jpg" alt="News papers boxes">
                     <div class="details">
-                        <h2>Print</h2>
+                        <h3>Print</h3>
                     
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi at voluptas omnis, magnam qui hic distinctio rem perferendis mollitia id fuga, fugit officia incidunt veritatis sint temporibus animi facere dolor.</p>
             
@@ -124,7 +133,7 @@
 
             <!-- vision div with a header annd a button it will occupy a 100% width for both mobile and desktop -->
             <div class="vision">
-                <h2>Our Vision</h2>
+                <h3>Our Vision</h3>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, recusandae repellendus voluptas, eveniet molestiae esse sint sapiente tenetur impedit nisi laborum quas dolores praesentium alias? Asperiores officia aliquam ex ipsum!</p>
 
@@ -132,14 +141,14 @@
             </div>
 
             <div>
-                <h1>Our Team</h1>
+                <h2 id="team">Our Team</h2>
                 <div class="team">
 
                     <div class="john">
                         <img src="images/john.jpg" alt="picture of John">
                         <div class="details">
-                            <h2>John Doe</h2>
-                            <h3>CEO and Co-owner</h3>
+                            <h3>John Doe</h3>
+                            <h4>CEO and Co-owner</h4>
                             <hr>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, itaque voluptates quam consequatur commodi nulla ipsa labore velit excepturi, nam iure iste esse? Soluta perspiciatis minus accusantium animi illo nemo?</p>
 
@@ -150,8 +159,8 @@
                     <div class="bob">
                         <img src="images/bob.jpg" alt="picture of Bob">
                         <div class="details">
-                            <h2>Bob Rite</h2>
-                            <h3>CFO and Co-owner</h3>
+                            <h3>Bob Rite</h3>
+                            <h4>CFO and Co-owner</h4>
                             <hr>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, itaque voluptates quam consequatur commodi nulla ipsa labore velit excepturi, nam iure iste esse? Soluta perspiciatis minus accusantium animi illo nemo?</p>
 
@@ -165,11 +174,11 @@
 
         <!-- an aside tag containing .form , .table and a div with the location and all those divs will display in flex at breakpoint -->
         <aside>
-            <h1>Contact us</h1>
+            <h2 id="contact">Contact us</h2>
             <div class="form">
 
                 <form>
-                    <h2>send us a message</h2>
+                    <h3>send us a message</h3>
                     <label>Full Name</label><br>
                     <input type="text" name="name">
                     <br>
@@ -186,7 +195,7 @@
 
             <!-- div of class "table" which will display a table of operation hours -->
             <div class="table">
-                <h2>Hours of operation</h2>
+                <h3>Hours of operation</h3>
                 <table>
 
                     <tr>
@@ -205,7 +214,7 @@
                 </table>
             </div>
             <div>
-                <h2>Location</h2>
+                <h3>Location</h3>
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44863.11128251141!2d-75.83114335136719!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sColl%C3%A8ge%20algonquin!5e0!3m2!1sfr!2sca!4v1711556599214!5m2!1sfr!2sca"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
 
