@@ -110,6 +110,7 @@ main{
     background-size: cover;
     height: 50vh;
     width: 100%;
+    align-content: center;
 }
 
 .home>div{
@@ -117,6 +118,7 @@ main{
     height: 70%;
     align-self: center;
     padding-top: 30px;
+
 }
 
 
@@ -235,12 +237,36 @@ iframe{
     margin: auto;
 }
 
+footer{
+    background-color: #222222;
+    color: #C78B07;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    
+}
+
 .digital{grid-area: dt;}
 .marketing{grid-area: mk;}
 .video{grid-area: vd;}
 .web{grid-area: wd;}
 .print{grid-area: pt;}
 .services h2{grid-area: h2;}
+
+
+.john img{grid-area: ji;}
+.john .details{grid-area: jd;}
+.bob img{grid-area: bi;}
+.bob .details{grid-area: bd;}
+
+.contact{grid-area:ct;}
+.location{grid-area:lc;}
+.form{grid-area:fr;}
+.table{grid-area:tl;}
+
+
 
 
 @media screen and (min-width: 760px){
@@ -269,6 +295,27 @@ iframe{
         padding-top: 10px;
     }
 
+    .home{
+        background-image: url("../images/main-banner.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-size: cover;
+        height: 60vh;
+        width: 100%;
+        align-content: center;
+    }
+
+    .home>div{
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 85%;
+        height: 70%;
+        margin: auto;
+        align-self: center;
+        padding-top: 30px;
+    
+    }
+
     .about{
         display: flex;
         align-items: center;
@@ -284,45 +331,77 @@ iframe{
         width: 500px;
     }
 
+
+
     .services{
+        width: calc(100%-100px);
         display: grid;
         grid-template-columns: repeat(6,1fr);
         grid-template-areas: "h2 h2 h2 . . ."
                              "dt dt dt mk mk mk"
                              "vd vd wd wd pt pt";
-        grid-gap: 5px 5px;
+        grid-gap: 0px 0px;
         justify-content: space-between;
     }
+
+    .vision{
+        height:250px;
+        align-content: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .john{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "ji jd";
+
+    }
+    
+    .bob{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "bd bi";
+    } 
+
+    .team{
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+
+    aside{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: "ct ct . ."
+                             "fr fr lc lc"
+                             "tl tl tl tl"
+    }
+
+    /* 
+    
+    
+    .bob img, .bob .details,.john img, .john .details{
+        flex-basis: 50% ;
+        
+    }
+    .team{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    } */
+
+    
+    
 
 }
 
 
 /*
-.details{
-    background-color: yellowgreen;
-}
-
-.john{
-    grid-area:jo;
-    display: flex;
-}
-
-.bob{
-    grid-area: b0;
-    display: flex;
-    flex-direction: row-reverse;
-} 
 
 
-.bob img, .bob .details,.john img, .john .details{
-    flex-basis: 50% ;
-    
-}
-.team{
-    display: flex;
-    flex-direction: column;
-    
-}
+
 
 
 
