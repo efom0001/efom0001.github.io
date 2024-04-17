@@ -1,9 +1,7 @@
-body{
+body{                  /*General body styles - Sets max width, center alignment, and font properties for the body. */
     max-width: 1200px;
     margin: auto;
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
@@ -13,16 +11,17 @@ h1{
 }
 
 h2{
-    font-size: 30px;
+    font-size: 32px;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 p{
-    font-size: 12px;
+    font-size: 16px;
 }
 
 h3{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -55,11 +54,12 @@ nav a{
 
 
 nav a:hover{
-    color:black   
+    background-color: #C78B07;
+    color:black   /* Changes text color on hover for navigation links */
 }
 
 nav a:active,nav a:visited{
-    background-color: #C78B07;
+    background-color: #C78B07;  /*Sets background color for active and visited navigation links.*/
 }
 
 nav a{
@@ -70,7 +70,7 @@ nav a{
 
 
 nav form{
-    display: flex;
+    display: flex;   /* Sets flexbox properties for the navigation form*/
     flex-direction: row;
     padding: 0;
     margin: 0;
@@ -114,21 +114,21 @@ main{
 }
 
 .home>div{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(2, 2, 2, 0.5); 
     height: 70%;
     align-self: center;
     padding-top: 30px;
 
 }
 
-
+/*styling all the buttons in the main container*/
 main .button{
     box-sizing: border-box;
     width: 300px;
     background-color: #C78B07;
     padding: 15px;
     text-decoration: none;
-    color: black;
+    color: #222222;
 }
 
 .home h1, .home p {
@@ -145,6 +145,8 @@ main .button{
 .services{
     width: 100%;
 }
+
+/* Service item styles - Applies a consistent background color, calculates width to maintain consistent spacing, centers items horizontally, and sets margins and padding for a clean layout */
 
 .digital,.marketing,.video,.web,.print{
     background-color: #FFE6AC;
@@ -248,6 +250,11 @@ footer{
     
 }
 
+table{
+    height: 100px;
+    margin-bottom: 10px;
+}
+
 .digital{grid-area: dt;}
 .marketing{grid-area: mk;}
 .video{grid-area: vd;}
@@ -271,6 +278,7 @@ footer{
 
 @media screen and (min-width: 760px){
 
+    /* Adjusts the navigation bar to a horizontal layout for wider screens */
     .big-nav{
         padding-top: 20px;
         padding-bottom: 20px;
@@ -282,10 +290,13 @@ footer{
         justify-content: center;
     }
 
+    /* Aligns navigation links in a row with space around them for larger screens */
     nav{
         flex-direction: row;
         justify-content: space-around;
     }
+
+    /* Styles the form within the navigation to align items in a row */
     nav form{
         display: flex;
         flex-direction: row;
@@ -295,6 +306,7 @@ footer{
         padding-top: 10px;
     }
 
+    /* Sets the home section's background image and dimensions for larger screens */
     .home{
         background-image: url("../images/main-banner.jpg");
         background-repeat: no-repeat;
@@ -306,8 +318,9 @@ footer{
         align-content: center;
     }
 
+    /* Styles the div inside the home section for a centered and semi-transparent overlay */
     .home>div{
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(2, 2, 2, 0.5);
         width: 85%;
         height: 70%;
         margin: auto;
@@ -316,25 +329,28 @@ footer{
     
     }
 
+     /* Applies a flexbox layout to the about section for better alignment and spacing */
     .about{
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
     }
+
+    /* Adjusts the size of the image in the about section */
     .about img{
        width: 400px; 
        height: 240px;
     }
 
+    /* Sets the width for the details div in the about section */
     .about .details{
         width: 500px;
     }
 
 
-
+    /* Converts the services section into a grid layout for organizing service items */
     .services{
-        width: calc(100%-100px);
         display: grid;
         grid-template-columns: repeat(6,1fr);
         grid-template-areas: "h2 h2 h2 . . ."
@@ -344,6 +360,35 @@ footer{
         justify-content: space-between;
     }
 
+    /* Centers the button within the services section and adjusts padding for alignment */
+    .services .button{
+        align-content: center;
+        justify-content: center;
+        padding-left: 150px;
+        padding-right: 120px;
+        margin: auto;
+        margin-left: 10px;
+    }
+
+     /* Specific button padding adjustments for the video service item */
+    .video .button{
+        padding-left: 144px;
+    }
+
+    /* Specific button padding adjustments for the digital service item */
+    .digital .button{
+        padding-left: 230px;
+        padding-right: 229px;
+    }
+
+    /* Specific button padding adjustments for the marketing service item */
+    .marketing .button{
+        padding-left: 215px;
+        padding-right: 215px;
+    }
+    
+
+    /* Styles the vision section to have a centered background and fixed height */
     .vision{
         height:250px;
         align-content: center;
@@ -351,6 +396,7 @@ footer{
         background-position: center;
     }
 
+     /* Sets a grid layout for the john team member section */
     .john{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -358,12 +404,14 @@ footer{
 
     }
     
+     /* Sets a grid layout for the BoB team member section */
     .bob{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-areas: "bd bi";
     } 
 
+    /* Applies a columnar flex layout to the team section for organizing team members */
     .team{
         display: flex;
         flex-direction: column;
@@ -371,6 +419,8 @@ footer{
 
     }
 
+    /* Sets a grid layout for the aside section to organize its content */
+    aside {
     aside{
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -378,35 +428,8 @@ footer{
                              "fr fr lc lc"
                              "tl tl tl tl"
     }
-
-    /* 
-    
-    
-    .bob img, .bob .details,.john img, .john .details{
-        flex-basis: 50% ;
-        
-    }
-    .team{
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-    } */
-
     
     
 
 }
 
-
-/*
-
-
-
-
-
-
-
-input[type="submit"] {
-    background: black;
-    color: green;
-  } */
