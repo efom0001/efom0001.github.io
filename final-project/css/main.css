@@ -420,7 +420,6 @@ table{
     }
 
     /* Sets a grid layout for the aside section to organize its content */
-    aside {
     aside{
         display: grid;
         grid-template-columns: repeat(4,1fr);
